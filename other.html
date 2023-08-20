@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-</head>
-<body>
-   teting
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    fizz buzz
+    <script>
+
+
+      //fizz buzz with for loop
+      let i;
+      for (i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) console.log(`${i} fizzbuzz `);
+        else if (i % 3 === 0) console.log(`${i} fizz`);
+        else if (i % 5 === 0) console.log(`${i} buzz `);
+        else console.log(i);
+      }
+
+
+
+      //fizz buzz with array push and pop method  with manual  in console log every time fun calculate();
+      let k = 1;
+      let countbox = [];
+
+      function calculate() {
+        // console.log(i);
+        if (k % 3 === 0 && k % 5 == 0) {
+          countbox.push("fizz buzz");
+        } else if (k % 3 === 0) {
+          countbox.push("fizz");
+        } else if (k % 5 === 0) {
+          countbox.push("buzz");
+        } else {
+          countbox.push(k);
+        }
+        console.log(countbox);
+        k++;
+      }
+      calculate();
+
+
+    </script>
+  </body>
 </html>
