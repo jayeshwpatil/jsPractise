@@ -12,7 +12,7 @@
           this.name = name;
           this.lastname = lastname;
         }
-        allstat() {
+        completeName() {
           return `full name is ${this.name} ${this.lastname}`;
         }
       }
@@ -21,14 +21,15 @@
           super(name, lastname);
           this.age = age;
         }
-        fullname() {
-          return `${this.allstat()} and age is ${this.age}`;
+        fullNameAndDetails() {
+          return `${this.completeName()} and age is ${this.age}`;
         }
       }
 
       a = new fullname("jayesh", "patil");
       b = new anotherClass("divya", "patil", 8);
-      console.log(b.fullname());
+      console.log(b.fullNameAndDetails());
+
     </script>
   </body>
 </html>
